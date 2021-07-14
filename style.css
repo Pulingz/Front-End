@@ -1,0 +1,17 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header nav ul {
+    list-style: none; /*untuk menghilangkan titik depan */
+    padding: 0;
+}
+.nav-link{
+    color: red;
+    text-decoration: none;
+}
+header ul li {
+    display: inline;
+}
+#second_menu + li{
+    background-color: green;
+}
