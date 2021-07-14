@@ -1,18 +1,18 @@
 .section-satu {
-    background-color: #b3b3b3;
-  }
-  
-  .section-dua {
-    background-color: #b3f3f3;
-  }
-  
-  .posts {
-    background-color: #b3b3b3;
-  }
-  
-  aside {
-    float: right;
-    background-color: #fff;
-    width: 150px;
-    font-style: italic;
-  }
+  background-color: #b3b3b3;
+}
+
+.section-dua {
+  background-color: #b3f3f3;
+}
+
+.posts {
+  background-color: #b3b3b3;
+}
+
+aside {
+  float: right;
+  background-color: #fff;
+  width: 150px;
+  font-style: italic;
+}

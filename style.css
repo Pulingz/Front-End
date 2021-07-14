@@ -15,4 +15,20 @@ header ul li {
 #second_menu + li{
     background-color: green;
 }
+.hero {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.hero__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.hero__content {
+}
 /* https://mcd-fe-slides.netlify.app/34 ---catetan */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positoning</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+    Relative
+    <!-- Element dapat digeser dari posisi semula sebagai patokan, tapi element tetap ada di dalam flow dokumen html -->
+    <div class="wrapper relative">
+      <div class="child">satu</div>
+      <div class="child selected">dua</div>
+      <div class="child">tiga</div>
+    </div>
+    
+    Absolute
+    <!-- Element dapat digeser dari posisi semula, dengan patokan pada parent element yang memiliki position relative, element dihapus dari flow dokumen html -->
+    <div class="wrapper absolute">
+      <div class="child">satu</div>
+      <div class="child selected">dua</div>
+      <div class="child">tiga</div>
+    </div>
+    
+    Sticky
+    <!-- Element tetap berada di posisinya dalam flow dokumen html, kemudian menempel pada posisi yang ditentukan dari parent element yang memiliki overflow scroll -->
+    <div class="wrapper sticky">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam eius neque impedit commodi, earum est nesciunt doloremque. Quis optio expedita eaque eligendi ullam quas iusto eos asperiores delectus porro?</p>
+      <div class="child selected">sticky</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis pariatur maiores explicabo aliquam culpa consequuntur commodi rem error, magni totam non fugiat, quod similique corrupti? Non velit animi architecto commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, in magni laborum earum temporibus fugiat mollitia at a quod sint debitis illo, asperiores dicta veritatis. Possimus quisquam iste culpa delectus.
+      </p>
+    </div>
+    
+    Fixed
+    <!-- Sejak awal sudah dihapus dari flow dokumen html seperti absolute, tapi fixed akan tetap pada posisinya di layar, tidak akan bergeser atau tergulung ketika parent elementnya discroll -->
+    <div class="wrapper fixed">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam eius neque impedit commodi, earum est nesciunt doloremque. Quis optio expedita eaque eligendi ullam quas iusto eos asperiores delectus porro?</p>
+      <div class="child selected">fixed</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis pariatur maiores explicabo aliquam culpa consequuntur commodi rem error, magni totam non fugiat, quod similique corrupti? Non velit animi architecto commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, in magni laborum earum temporibus fugiat mollitia at a quod sint debitis illo, asperiores dicta veritatis. Possimus quisquam iste culpa delectus.
+      </p>
+    </div>
+</body>
+</html>

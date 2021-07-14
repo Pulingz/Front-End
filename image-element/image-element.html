@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-element</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <!-- Standard image -->
+<div>  
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Jakarta_Skyline_Part_2.jpg"
+      width="400"
+      alt="Jakarta"
+    >
+  </div>
+  
+  <!-- Responsive image -->
+  <!-- #1 Responsive Quality -->
+  <!-- Dimensi width height CSS sama, tapi resolusi image yang diload berbeda, menyesuaikan kepadatan pixel dari devices yang digunakan -->
+  <div>
+    <img
+      srcset="https://via.placeholder.com/200x100.jpg,
+              https://via.placeholder.com/400x200.jpg 1.5x,
+              https://via.placeholder.com/800x400.jpg 2x"
+      src="https://via.placeholder.com/800x400.jpg"
+      alt="Jakarta"
+      class="image-2"
+    >
+  </div>
+  
+  <!-- #2 Responsive Dimension -->
+  <!-- Dimensi width height CSS berbeda, menyesuaikan lebar viewport -->
+  <div>
+    <img
+      srcset="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-fairy-480w.jpg 480w,
+              https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-fairy-800w.jpg 800w"
+      sizes="(max-width: 600px) 480px, 800px"
+      src="elva-fairy-800w.jpg"
+      alt="Elva dressed as a fairy"
+    >
+  </div>
+  
+  <!-- #3 Responsive Art Direction -->
+  <!-- Memuat gambar yang berbeda, menyesuaikan lebar viewport -->
+  <picture>
+    <source
+      media="(max-width: 799px)"
+      srcset="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-480w-close-portrait.jpg"
+    >
+    <source
+      media="(min-width: 800px)"
+      srcset="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-800w.jpg"
+    >
+    <img
+      src="elva-800w.jpg"
+      alt="Chris standing up holding his daughter Elva"
+    >
+  </picture>
+  
+  
+</body>
+</html>

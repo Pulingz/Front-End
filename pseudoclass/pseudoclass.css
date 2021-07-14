@@ -1,0 +1,29 @@
+button {
+    background-color: hsl(186deg 84% 42%);
+    color: white;
+    border: none;
+    width: 100px;
+    padding: 8px 0;
+    position: relative;
+    bottom: 0;
+  }
+  
+  button:hover {
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  button.transition {
+  /*   transition: wid  th 0.3s; */
+    transition: all 0.3s;
+  }
+  
+  button:focus {
+    border-radius: 25px;
+    outline: 1px dashed #000;
+    outline-offset: 4px;
+  }
+  
+  button:active {
+    bottom: -8px;
+  }
